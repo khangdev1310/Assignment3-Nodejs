@@ -11,10 +11,16 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
 const Schema = mongoose.Schema
-const UsersSchema = new Schema({
-  name: String,
-  password: String,
-})
+const UsersSchema = new Schema(
+  {
+    name: String,
+    password: String,
+  },
+  {
+    timestamps: true,
+    versionKey: false,
+  },
+)
 const UserModel = mongoose.model('user', UsersSchema)
 
 const connectDb = async () => {
