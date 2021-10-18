@@ -5,11 +5,11 @@
     "description": "Description",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "assignment3-nodejs.herokuapp.com",
   "basePath": "/",
   "tags": [],
   "schemes": [
-    "http"
+    "https"
   ],
   "consumes": [],
   "produces": [],
@@ -24,7 +24,7 @@
     },
     "/api/users": {
       "get": {
-        "tags": ["Get users"],
+        "tags": [],
         "description": "",
         "parameters": [],
         "responses": {
@@ -34,7 +34,7 @@
         }
       },
       "post": {
-        "tags": ["Add user"],
+        "tags": [],
         "description": "",
         "parameters": [
           {
